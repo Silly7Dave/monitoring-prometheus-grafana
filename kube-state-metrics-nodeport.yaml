@@ -1,0 +1,13 @@
+kind: Service
+apiVersion: v1
+metadata:
+    namespace: kube-system
+    name: kube-state-nodeport
+spec:
+    selector:
+        app.kubernetes.io/name: kube-state-metrics
+    ports:
+        - protocol: TCP
+        port: 8080
+        nodePort: 30000
+    type: NodePort

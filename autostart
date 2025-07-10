@@ -1,0 +1,4 @@
+@lxpanel --profile LXDE-pi
+@pcmanfm --desktop --profile LXDE-pi
+@xscreensaver -no-splash
+@/usr/bin/grafana-kiosk -URL=http://192.168.0.111:30037/d/af06c875-0544-4d5b-9f30-2a9b5cee5ac7/raspberry-pi-zero -login-method=local -username=... -password=... -kiosk-mode=full -lxde
